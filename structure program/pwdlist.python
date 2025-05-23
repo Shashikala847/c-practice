@@ -1,0 +1,24 @@
+pwdlist=["yath0604","99ya0604"]
+name=input("please enter your first 4 letters of your name :").lower()
+# print(len(name))
+if len(name)<=4:
+    if len(name)==4:
+        dob=input("enter your date and month of birth")
+        pw=name+dob
+    else:
+        name1=input("please enter 9 beginning of ur name  :")
+        name=name1+name
+        dob=input("enter your date and month of birth")
+        pw=name+dob
+        
+    if pw in pwdlist:
+        print("file is opened ")
+    else:
+        print("you have entered the incoorect password")
+
+    # elif len(name)<4:
+
+    #     name=input("you have eneter lessthan 4 letter please add 9 at the begining").lower()
+   
+
+# print(name)
